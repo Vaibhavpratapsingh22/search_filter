@@ -1,7 +1,20 @@
-*{
-
+.search{
+  margin: 20px 0;
+  height: 40px;
+  border: 2px solid red;
+  font-weight: 600;
+  font-size: 20px;
 }
-
+th,td{
+  border: 2px solid black;
+padding-inline: 40px;
+}
+td{
+  padding: 10px 0;
+}
+table{
+  border: 2px solid black;
+}
 .App {
   text-align: center;
   display: flex;

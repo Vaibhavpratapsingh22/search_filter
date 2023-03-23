@@ -1,6 +1,6 @@
 import React from 'react'
-
-const Table = () => {
+import './App.css'
+const Table = ({data}) => {
   return (
     <table>
         <tbody>
@@ -9,6 +9,14 @@ const Table = () => {
                 <th>SurName</th>
                 <th>Email</th>
             </tr>
+             {data.map((item)=>(
+              <tr>
+              <td>{item?.first_name}</td>
+              <td>{item?.last_name}</td>
+              <td>{item?.email}</td>
+          </tr>
+            ))}
+            
         </tbody>
         </table>
   )
